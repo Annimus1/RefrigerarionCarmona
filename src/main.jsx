@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import App from './App.jsx';
+import App from './pages/App.jsx';
+import Layout from './components/Layout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/test',
-    element: <>test</>
+    element: <Layout><p>Test</p></Layout>
   }
 ])
 
