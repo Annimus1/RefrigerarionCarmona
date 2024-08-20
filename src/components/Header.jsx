@@ -9,7 +9,7 @@ function Header() {
     setIsShowed(!isShowed)
   }
   return (
-    <header className="h-14 px-5 py-2 bg-light-blue opacity-100 backdrop-blur-sm relative lg:bg-light-blue">
+    <header className="h-14 px-5 py-2 bg-gradient-to-t from-blue-400 to-blue-500 opacity-100 backdrop-blur-sm relative lg:bg-light-blue">
       <nav className="min-w-screen flex justify-between items-center">
         {/* Logo */}
         <Link id="logo" to={'/'}>
@@ -18,7 +18,7 @@ function Header() {
               src="https://placehold.co/40x40"
               alt="Refrigeracion Carmona" title="Refrigeracion Carmona"
               width="50" height="50" />
-            <p className='text-background text-lg font-bold'>Refrigeracion Carmona</p>
+            <p className='text-background text-lg font-bold'>Refrigeración Carmona</p>
           </div>
         </Link>
 
@@ -35,7 +35,7 @@ function Header() {
 
       {/* Sidebar Menu */}
       <div className={`${isShowed ? 'translate-x-0' : '-translate-x-[-500px]'} 
-        max-w-[420px] w-full h-screen flex flex-col absolute right-0 top-0 transition-transform ease-outs duration-700 bg-light-blue p-6 text-white
+        max-w-[420px] w-full h-screen flex flex-col absolute right-0 top-0 transition-transform ease-outs duration-700 bg-gradient-to-t from-blue-400 to-blue-500 p-6 text-white
         z-50`}>
         {/* Header */}
         <header className="flex justify-between items-end mb-6">
@@ -43,7 +43,7 @@ function Header() {
           <img src="https://placehold.co/180x40" alt="Refrigeracion Carmona" width="180" />
           
           {/* svg X */}
-          <svg className="hover:cursor-pointer fill-white" onClick={handleShow}
+          <svg className="hover:cursor-pointer fill-background" onClick={handleShow}
             xmlns="http://www.w3.org/2000/svg" width="35" height="35"
             viewBox="0 0 24 24">
             <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z" />
