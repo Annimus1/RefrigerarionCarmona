@@ -6,10 +6,15 @@ function Header() {
   const [isShowed, setIsShowed] = React.useState(false);
 
   const handleShow = () => {
-    setIsShowed(!isShowed)
-  }
+    setIsShowed(!isShowed);
+  };
+
+  function hideModal(params) {
+    setIsShowed(false);
+  };
+
   return (
-    <header className="h-14 px-5 py-2 bg-gradient-to-t from-blue-400 to-blue-500 opacity-100 backdrop-blur-sm relative lg:bg-light-blue">
+    <header className="h-14 px-5 py-2 bg-gradient-to-t from-blue-500 to-blue-800 opacity-100 backdrop-blur-sm relative lg:bg-light-blue">
       <nav className="min-w-screen flex justify-between items-center">
         {/* Logo */}
         <Link id="logo" to={'/'}>
@@ -18,13 +23,13 @@ function Header() {
               src="https://placehold.co/40x40"
               alt="Refrigeracion Carmona" title="Refrigeracion Carmona"
               width="50" height="50" />
-            <p className='text-background text-lg font-bold'>Refrigeración Carmona</p>
+            <p className='hidden md:block text-background text-lg font-bold'>Refrigeración Carmona</p>
           </div>
         </Link>
 
         {/* Menu */}
         <div className='hidden md:flex md:justify-end md:items-center md:gap-6 md:flex-grow'>
-          <MenuContent/>
+          <MenuContent hideModal={null} isShowed={null}/>
         </div>
 
         {/* Menu button */}
@@ -35,7 +40,7 @@ function Header() {
 
       {/* Sidebar Menu */}
       <div className={`${isShowed ? 'translate-x-0' : '-translate-x-[-500px]'} 
-        max-w-[420px] w-full h-screen flex flex-col absolute right-0 top-0 transition-transform ease-outs duration-700 bg-gradient-to-t from-blue-400 to-blue-500 p-6 text-white
+        max-w-[420px] w-full h-screen flex flex-col absolute right-0 top-0 transition-transform ease-outs duration-700 bg-gradient-to-t from-blue-500 to-blue-700 p-6 text-white
         z-50`}>
         {/* Header */}
         <header className="flex justify-between items-end mb-6">
@@ -52,7 +57,7 @@ function Header() {
 
         {/* Side bar Content */}
         <div className="flex flex-col gap-3 h-[400px] max-h-[400px] overflow-y-scroll mb-5">
-          <MenuContent />
+          <MenuContent isShowed={isShowed} hideModal={hideModal}/>
         </div>
       </div>
     </header>
