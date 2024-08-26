@@ -18,7 +18,6 @@ function App() {
 
   return (
     <>
-      <Layout >
         {/* hero */}
         <Hero />
 
@@ -39,8 +38,6 @@ function App() {
         {/* Galery */}
         <p className='px-14 text-2xl mt-40 mb-20 text-background font-bold md:text-center md:text-4xl'>Algunos de nuestros trabajos</p>
         <Galery />
-
-      </Layout>
     </>
   )
 }
