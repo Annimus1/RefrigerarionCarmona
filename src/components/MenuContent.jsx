@@ -13,7 +13,7 @@ function SideMenuContent({ isShowed, hideModal }) {
             <Link className='text-lg font-bold text-white md:hover:text-blue-500 duration-300' to={'/services'} onClick={() => handleClick()}>Sercivios</Link>
             <Link className='text-lg font-bold text-white md:hover:text-blue-500 duration-300' to={'/test'} onClick={() => handleClick()}>Contacto</Link>
             <Link className='text-lg font-bold text-white md:hover:text-blue-500 duration-300' to={'/test'} onClick={() => handleClick()}>Sobre Nosotros</Link>
-            <Link className='text-lg font-bold text-white' to={'/test'}>Login</Link>
+            {/* <Link className='text-lg font-bold text-white' to={'/test'}>Login</Link> */}
         </>
     )
 }
