@@ -1,23 +1,24 @@
 import React from 'react'
 import Feature from './Feature'
+import calidad from '../../public/calidad.png'
 
 function Features() {
   const features = [
     {
       id: 1,
-      img: 'https://placehold.co/200x200',
+      img: `../../public/calidad.png`,
       title: 'Garantía',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit!'
     },
     {
       id: 2,
-      img: 'https://placehold.co/200x200',
+      img: `../../public/confianza.png`,
       title: 'Responsabilidad',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit!'
     },
     {
       id: 3,
-      img: 'https://placehold.co/200x200',
+      img: '../../public/eficiencia.png',
       title: 'Eficiencia',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit!'
     },

@@ -5,7 +5,7 @@ function Feature({img, title, description, url}) {
     return (
         <article className='flex flex-col justify-center items-center'>
             {/* image */}
-            <img alt={''} src={img} />
+            <img alt={title+' img'} src={img} width={200} height={200}/>
             {/* title */}
             <h3 className='my-3 text-background font-bold text-lg'>{title}</h3>
             {/* description */}
