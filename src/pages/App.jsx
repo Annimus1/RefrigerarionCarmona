@@ -5,39 +5,42 @@ import Features from '../components/Features';
 import CompanyProfile from '../components/CompanyProfile';
 import Galery from '../components/Galery';
 import Services from '../components/Services';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
 
-  // References 
-  // https://plainenglish.io/blog/send-whatsapp-web-messages-in-react-easily-3bf2a82a2eb2
-  // https://web.whatsapp.com/send?phone="+584245250232"&text="hola, esto es una prueba de url"
-  // https://placehold.co/180x40
-  // https://suproenergy.com/?gad_source=1&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7Dob6LDMNQtPB8OPPFMO7-FGp4FH3qDZ8kLq9AaeGZtH8lrawUIjUcoaAguHEALw_wcB
-  // https://solarserviceprofessionals.com/
+ 
+  
 
   return (
     <>
-        {/* hero */}
-        <Hero />
+      {/* hero */}
+      <Hero />
 
-        {/* Main features */}
+      {/* Main features */}
 
-        <p className='px-14 text-2xl mt-40 mb-20 text-background font-bold md:text-center md:text-4xl'>¿Por qué elegirnos? </p>
-        <Features />
-
-
-        {/* Company profile */}
-        <CompanyProfile />
-
-        {/* Services */}
-        <p className='px-14 text-2xl mt-40 mb-20 text-background font-bold md:text-center md:text-4xl'>Algunos de nuestros Servicios </p>
-        <Services/>
+      <p className='px-14 text-2xl mt-40 mb-20 text-background font-bold md:text-center md:text-4xl'>¿Por qué elegirnos? </p>
+      <Features />
 
 
-        {/* Galery */}
-        <p className='px-14 text-2xl mt-40 mb-20 text-background font-bold md:text-center md:text-4xl'>Algunos de nuestros trabajos</p>
-        <Galery />
+      {/* Company profile */}
+      <CompanyProfile />
+
+      {/* Services */}
+      <p className='px-14 text-2xl mt-40 mb-20 text-background font-bold md:text-center md:text-4xl'>Algunos de nuestros Servicios </p>
+      <Services />
+
+
+      {/* Galery */}
+      <p className='px-14 text-2xl mt-40 mb-20 text-background font-bold md:text-center md:text-4xl'>Algunos de nuestros trabajos</p>
+      <Galery />
+
+      {/* Action call */}
+      <div className='w-full flex items-center justify-center mb-20 lg:mb-32'>
+        <Link to={'/contact'} className='border border-blue-500 rounded-lg p-2 text-nowrap text-blue-500 lg:p-5 font-bold lg:hover:border-gray-200 lg:hover:text-gray-200 lg:hover:bg-blue-900 duration-500'> Contacta a uno de nuestros especialistas</Link>
+      </div>
+
     </>
   )
 }
