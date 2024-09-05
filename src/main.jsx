@@ -5,12 +5,13 @@ import './index.css';
 import Layout from './components/Layout.jsx';
 import App from './pages/App.jsx';
 import Services from './pages/Services.jsx';
+import Contact from './pages/Contact.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout>
-      <App />,
+      <App />
     </Layout>
   },
   {
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
     path: '/services',
     element: <Layout>
       <Services />
+    </Layout>
+  },
+  {
+    path: '/contact',
+    element: <Layout>
+      <Contact/>
     </Layout>
   }
 ])
