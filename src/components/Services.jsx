@@ -7,7 +7,7 @@ function Services() {
       id: 1,
       img: 'https://www.coversa.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-24-at-12.03.56.jpeg',
       title: 'Instalación',
-      coverage: ["Aires Acondicionados", "Cava Cuarto", 'Maquina de helados'],
+      coverage: ["Sistemas de protección electrica", "Aires Acondicionados", "Cava Cuarto", 'Maquina de helados'],
       url: "/services"
     },
     {

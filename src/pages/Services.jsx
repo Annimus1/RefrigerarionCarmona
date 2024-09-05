@@ -39,6 +39,10 @@ const instalacion = {
   services: [
     
     {
+      title: "Sistemas de protección electrica",
+      src: "https://blog.suileraltamirano.com/wp-content/uploads/2023/04/juhujh-1024x811.png"
+    },
+    {
       title: "Aires Acondicionados",
       src: "https://static.wixstatic.com/media/df39dd_d75341248c6c4e1d9f9137ecfd745caa~mv2.jpg/v1/fill/w_552,h_366,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/facbeook.jpg"
     },
