@@ -27,7 +27,7 @@ function ServicesPageComponent({ title, reverse, img, id, services }) {
         </ul>
 
         <div className='flex justify-center mt-10'>
-          <Link to={'/test'} className='border border-blue-900 rounded-lg p-2 text-nowrap text-blue-900 lg:p-5 font-bold lg:hover:border-gray-200 lg:hover:text-gray-200 lg:hover:bg-blue-900 duration-500'> Contacta a uno de nuestros especialistas</Link>
+          <Link to={'/contact'} className='border border-blue-900 rounded-lg p-2 text-nowrap text-blue-900 lg:p-5 font-bold lg:hover:border-gray-200 lg:hover:text-gray-200 lg:hover:bg-blue-900 duration-500'> Contacta a uno de nuestros especialistas</Link>
         </div>
 
       </div>
