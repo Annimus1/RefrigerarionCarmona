@@ -9,7 +9,7 @@ function Services() {
     <>
 
       {/* hero */}
-      <seccion className="flex h-[95vh] items-center justify-center bg-gradient-to-tr to-blue-700 from-indigo-900">
+      <section className="flex h-[95vh] items-center justify-center ">
         <div className='area'></div>
         <div className="w-max">
           <h1
@@ -17,19 +17,19 @@ function Services() {
             {text}
           </h1>
         </div>
-        <ul class="circles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-      </seccion>
+        <ul className="circles">
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+          <li>❅</li>
+        </ul>
+      </section>
 
 
       {/* Instalacion */}
