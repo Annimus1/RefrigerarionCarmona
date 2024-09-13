@@ -1,6 +1,5 @@
 import React from 'react'
 import Feature from './Feature'
-import calidad from '../../public/calidad.png'
 
 function Features() {
   const features = [
@@ -8,19 +7,19 @@ function Features() {
       id: 1,
       img: `../../public/calidad.png`,
       title: 'Garantía',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit!'
+      description: 'Todos nuestros Tecnicos estan excelentemente capacitados para realizar cualquier tipo de trabajo.'
     },
     {
       id: 2,
       img: `../../public/confianza.png`,
       title: 'Responsabilidad',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit!'
+      description: 'Nos enorgullecemos de atender al llamado de cada uno de nustros clientes, priorizando asi la atencion a cada uno de ellos.'
     },
     {
       id: 3,
       img: '../../public/eficiencia.png',
       title: 'Eficiencia',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit!'
+      description: 'Contamos con diversos suministros, por lo que podemos reemplazar cualquier pieza averiada a la brevedad.'
     },
   ]
   return (

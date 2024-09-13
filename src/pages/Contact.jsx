@@ -10,7 +10,7 @@ function Contact() {
   const messages = { 
     "Reparacion": "¿Qué tipo de equipo es y cuáles son sus principales fallos?", 
     "Mantenimiento": "¿Qué tipo de equipo es el que necesita el Mantenimenito?", 
-    "Instalacion": "¿Qué tipo de dispositivo necesita instalar?" 
+    "Instalacion": "¿Qué tipo de equipo necesita instalar?" 
   }
 
   function handleSubmit(e) {
@@ -33,7 +33,7 @@ function Contact() {
       <form id="contactForm" className=" w-3/4 lg:w-1/2 mx-auto lg:border lg:border-gray-100 lg:p-3 lg:rounded-lg lg:shadow-lg" onSubmit={(event) => handleSubmit(event)}>
 
         <div className='w-full px-14 flex justify-center my-10'>
-          <h2 className='font-bold text-2xl text-nowrap select-none lg:text-4xl'>Pongámonos en contacto</h2>
+          <h2 className='font-bold text-blue-900 text-2xl text-nowrap select-none lg:text-4xl'>Pongámonos en contacto</h2>
         </div>
 
         {/* Info about the client */}
@@ -75,7 +75,7 @@ function Contact() {
         </div>
 
         {/* Send Btn */}
-        <button type="submit" className="text-white bg-blue-500 hover:bg-blue-950 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-md w-full sm:w-auto px-5 py-2.5 text-center ">Contactar</button>
+        <button type="submit" className="text-white bg-blue-500 hover:bg-blue-950 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-md w-full sm:w-auto px-5 py-2.5 text-center">Contactar</button>
 
       </form>
     </section>
