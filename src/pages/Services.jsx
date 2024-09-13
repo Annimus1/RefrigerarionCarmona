@@ -3,27 +3,46 @@ import ServicesPageComponent from '../components/ServicesPageComponent';
 
 function Services() {
 
+  const text = "Nuestros servicios"
+  console.log(text.length)
   return (
     <>
 
-      {/* posible hero */}
-      <section className='h-[95vh] bg-blue-950 text-white flex justify-center items-center flex-col mb-10'>
-        <img className={'w-10 h-10 rounded-full'} src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1280px-Flag_of_Venezuela.svg.png" alt="Bandera de venezuela" />
-        <p>Desde Venezuela utilizamos nuestra vasta experiencia en refrigeracion para solventar cualquer necesidad que tenga nuestros clientes</p>
-      </section>
+      {/* hero */}
+      <seccion className="flex h-[95vh] items-center justify-center bg-gradient-to-tr to-blue-700 from-indigo-900">
+        <div className='area'></div>
+        <div className="w-max">
+          <h1
+            className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-3xl lg:text-5xl text-white font-bold">
+            {text}
+          </h1>
+        </div>
+        <ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+      </seccion>
 
 
       {/* Instalacion */}
-      <ServicesPageComponent title={instalacion.title} reverse={instalacion.reverse} id={instalacion.id} img={instalacion.img} services={instalacion.services}/>
+      <ServicesPageComponent title={instalacion.title} reverse={instalacion.reverse} id={instalacion.id} img={instalacion.img} services={instalacion.services} />
       <hr className="mx-4 h-px my-8 bg-blue-900 border-0 "></hr>
 
 
       {/* Mantenimiento */}
-      <ServicesPageComponent title={mantenimiento.title} reverse={mantenimiento.reverse} id={mantenimiento.id} img={mantenimiento.img} services={mantenimiento.services}/>
+      <ServicesPageComponent title={mantenimiento.title} reverse={mantenimiento.reverse} id={mantenimiento.id} img={mantenimiento.img} services={mantenimiento.services} />
       <hr className="mx-4 h-px my-8 bg-blue-900 border-0 "></hr>
 
       {/* Reparacion */}
-      <ServicesPageComponent title={reparacion.title} reverse={reparacion.reverse} id={reparacion.id} img={reparacion.img} services={reparacion.services}/>
+      <ServicesPageComponent title={reparacion.title} reverse={reparacion.reverse} id={reparacion.id} img={reparacion.img} services={reparacion.services} />
 
     </>
   )
@@ -32,12 +51,12 @@ function Services() {
 export default Services
 
 const instalacion = {
-  id:"instalacion", 
-  reverse: false, 
-  title: "Instalación", 
+  id: "instalacion",
+  reverse: false,
+  title: "Instalación",
   img: "https://www.coversa.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-24-at-12.03.56.jpeg",
   services: [
-    
+
     {
       title: "Sistemas de protección electrica",
       src: "https://blog.suileraltamirano.com/wp-content/uploads/2023/04/juhujh-1024x811.png"
@@ -62,10 +81,10 @@ const instalacion = {
 }
 
 const mantenimiento = {
-  id:"mantenimiento", 
-  reverse: true, 
-  title: "Mantenimiento", 
-  img:"https://aircon.pe/wp-content/uploads/2021/06/mantenimiento-de-aire-acondicionado-en-lima-aircon-peru-ld-1600x800.jpg",
+  id: "mantenimiento",
+  reverse: true,
+  title: "Mantenimiento",
+  img: "https://aircon.pe/wp-content/uploads/2021/06/mantenimiento-de-aire-acondicionado-en-lima-aircon-peru-ld-1600x800.jpg",
   services: [
     {
       title: "Neveras",
@@ -99,10 +118,10 @@ const mantenimiento = {
 }
 
 const reparacion = {
-  id:"reparacion", 
-  reverse: false, 
-  title: "Reparación",  
-  img:"https://media.licdn.com/dms/image/v2/D4D12AQHn3ZlKxKzGbg/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1697791815087?e=2147483647&v=beta&t=hbWWhWl5KnxbuHCBpe7axKNyYJLMka-po4Dub7JkCRE",
+  id: "reparacion",
+  reverse: false,
+  title: "Reparación",
+  img: "https://media.licdn.com/dms/image/v2/D4D12AQHn3ZlKxKzGbg/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1697791815087?e=2147483647&v=beta&t=hbWWhWl5KnxbuHCBpe7axKNyYJLMka-po4Dub7JkCRE",
   services: [
     {
       title: "Neveras",
@@ -145,6 +164,6 @@ const reparacion = {
       title: "Enfriador Charcutero",
       src: "https://http2.mlstatic.com/D_Q_NP_2X_682049-MLV50400565887_062022-E.webp"
     },
-    
+
   ]
 }
