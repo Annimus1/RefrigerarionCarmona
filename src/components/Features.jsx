@@ -5,19 +5,19 @@ function Features() {
   const features = [
     {
       id: 1,
-      img: `../../public/calidad.png`,
+      img: `/calidad.png`,
       title: 'Garantía',
       description: 'Todos nuestros Tecnicos estan excelentemente capacitados para realizar cualquier tipo de trabajo.'
     },
     {
       id: 2,
-      img: `../../public/confianza.png`,
+      img: `/confianza.png`,
       title: 'Responsabilidad',
       description: 'Nos enorgullecemos de atender al llamado de cada uno de nustros clientes, priorizando asi la atencion a cada uno de ellos.'
     },
     {
       id: 3,
-      img: '../../public/eficiencia.png',
+      img: '/eficiencia.png',
       title: 'Eficiencia',
       description: 'Contamos con diversos suministros, por lo que podemos reemplazar cualquier pieza averiada a la brevedad.'
     },
