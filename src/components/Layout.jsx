@@ -5,7 +5,7 @@ import Footer from './Footer';
 function Layout({ children }) {
 
   return (
-    <div className='overflow-x-clip'>
+    <div className='overflow-x-clip relative'>
       <Header />
 
       {children}
