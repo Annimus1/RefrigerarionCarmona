@@ -14,7 +14,8 @@ function Header() {
   };
 
   return (
-    <header className="h-14 w-full px-5 py-2  bg-blue-950 opacity-100 backdrop-blur-sm sticky z-20">
+    <header className="h-14 w-full px-5 py-2  bg-blue-950 opacity-100 backdrop-blur-sm sticky top-0 z-20">
+      {/* Menu Bar */}
       <nav className="min-w-screen flex justify-between items-center">
         {/* Logo */}
         <Link id="logo" to={'/'}>
@@ -29,7 +30,7 @@ function Header() {
 
         {/* Menu */}
         <div className='hidden md:flex md:justify-end md:items-center md:gap-6 md:flex-grow'>
-          <MenuContent hideModal={null} isShowed={null}/>
+          <MenuContent icons={false}/>
         </div>
 
         {/* Menu button */}
@@ -38,15 +39,17 @@ function Header() {
         </div>
       </nav>
 
-      {/* Sidebar Menu */}
-      <div className={`${isShowed ? 'translate-x-0' : '-translate-x-[-500px]'} 
-        max-w-[420px] w-full h-screen flex flex-col absolute right-0 top-0 transition-transform ease-outs duration-700 bg-blue-950 p-6 text-white
-        z-50`}>
+      {/* Drawer Component */}
+      <div
+        className={`fixed top-0 left-0 z-50 h-screen w-full p-4 transition-transform ${isShowed ? "translate-x-0":"translate-x-full"} ease-outs duration-700 bg-blue-950 p-6 text-white`}
+        tabIndex="1"
+        aria-labelledby="drawer-label">
+
         {/* Header */}
         <header className="flex justify-between items-end mb-6">
           {/* logo */}
           <img src="https://placehold.co/180x40" alt="Refrigeracion Carmona" width="180" />
-          
+
           {/* svg X */}
           <svg className="hover:cursor-pointer fill-white" onClick={handleShow}
             xmlns="http://www.w3.org/2000/svg" width="35" height="35"
@@ -57,9 +60,10 @@ function Header() {
 
         {/* Side bar Content */}
         <div className="flex flex-col gap-3 h-[400px] max-h-[400px] overflow-y-scroll mb-5">
-          <MenuContent isShowed={isShowed} hideModal={hideModal}/>
+          <MenuContent isShowed={isShowed} hideModal={hideModal} icons={true}/>
         </div>
       </div>
+
     </header>
   )
 }
