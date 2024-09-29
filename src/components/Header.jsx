@@ -14,11 +14,7 @@ function Header() {
   };
 
   return (
-<<<<<<< HEAD
-    <header className="h-14 w-full px-5 py-2  bg-blue-950 opacity-100 backdrop-blur-sm sticky z-20">
-=======
     <header className="h-14 w-full px-5 py-2  bg-blue-950 opacity-100 backdrop-blur-sm sticky top-0 z-20">
->>>>>>> fix/Drawer
       {/* Menu Bar */}
       <nav className="min-w-screen flex justify-between items-center">
         {/* Logo */}
