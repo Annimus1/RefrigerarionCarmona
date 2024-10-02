@@ -6,6 +6,7 @@ import Layout from './components/Layout.jsx';
 import App from './pages/App.jsx';
 import Services from './pages/Services.jsx';
 import Contact from './pages/Contact.jsx';
+import Login from './pages/Login.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,14 @@ const router = createBrowserRouter([
     element: <Layout>
       <Contact/>
     </Layout>
+  },
+  {
+    path: '/login',
+    element: <Layout>
+      <Login/>
+    </Layout>
   }
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

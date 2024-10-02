@@ -5,23 +5,18 @@ function Contact() {
   // References 
   // https://plainenglish.io/blog/send-whatsapp-web-messages-in-react-easily-3bf2a82a2eb2
 
-  const [category, setCategory] = React.useState("Reparacion");
+  const [category, setCategory] = React.useState("Reparación");
   
   const messages = { 
-    "Reparacion": "¿Qué tipo de equipo es y cuáles son sus principales fallos?", 
+    "Reparación": "¿Qué tipo de equipo es y cuáles son sus principales fallos?", 
     "Mantenimiento": "¿Qué tipo de equipo es el que necesita el Mantenimenito?", 
-    "Instalacion": "¿Qué tipo de equipo necesita instalar?" 
+    "Instalación": "¿Qué tipo de equipo necesita instalar?" 
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    // console.log(e.target[0].value); // 
-    // console.log(e.target[1].value); //
-    // console.log(e.target[2].value); //
-    // console.log(e.target[3].value); //
-    // console.log(e.target[4].value); //
 
-    let url = `https://web.whatsapp.com/send?phone="+584120606765"&`;
+    let url = `https://web.whatsapp.com/send?phone=""&`;
 
     let text = `Hola soy ${e.target[0].value} ${e.target[1].value}. Escribo ya que necesito un@ ${e.target[2].value}. ${e.target[4].value}`
 
@@ -52,7 +47,7 @@ function Contact() {
 
           <div className="relative z-0 w-full mb-5 group">
             <input type="tel" pattern="[0-9]{11}" name="phone" id="phone" className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-950 peer" placeholder=" " required />
-            <label htmlFor="phone" className="peer-focus:font-medium absolute text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Numero Telefonico</label>
+            <label htmlFor="phone" className="peer-focus:font-medium absolute text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Numero Telefónico</label>
           </div>
 
         </div>
@@ -62,8 +57,8 @@ function Contact() {
           <h3 className='text-center text-xl text-gray-400 select-none text-nowrap lg:text-2xl'>Que tipo de servicio necesitas?</h3>
           <div className="relative z-0 w-full mb-5 group">
             <select value={category} onChange={(e) => { setCategory(e.currentTarget.value) }} id="categorias" className="block py-2.5 px-0 w-full text-md text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-950 peer">
-              <option>Reparacion</option>
-              <option>Instalacion</option>
+              <option>Reparación</option>
+              <option>Instalación</option>
               <option>Mantenimiento</option>
             </select>
           </div>

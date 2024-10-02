@@ -42,7 +42,7 @@ function SideMenuContent({hideModal, icons}) {
             }
             Contacto
             </Link>
-            <Link className='w-32 text-lg font-bold px-10 text-white border border-white md:rounded-md md:hover:bg-white md:hover:text-blue-900 duration-300 ease-linear' onClick={() => handleClick()} to={'/test'}>Login</Link>
+            <Link className='w-32 text-lg font-bold px-10 text-white border border-white md:rounded-md md:hover:bg-white md:hover:text-blue-900 duration-300 ease-linear' onClick={() => handleClick()} to={'/login'}>Login</Link>
         </>
     )
 }
