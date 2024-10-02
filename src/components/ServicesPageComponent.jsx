@@ -7,10 +7,6 @@ function ServicesPageComponent({ title, reverse, img, id, services }) {
   return (
     <section id={id} className={`h-auto lg:h-[100vh] px-8 flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} lg:gap-4 justify-center items-center mb-10`}>
 
-      {/* <div className='lg:w-1/4 flex justify-center pr-10'>
-        <img className='max-w-[450] max-h-[350] rounded-md' src={img} alt="" />
-      </div> */}
-
       <div className='mt-10  lg:w-3/4 '>
 
         <h2 className='text-2xl font-bold lg:text-3xl lg:text-center mb-5 text-blue-900'>{title}</h2>
