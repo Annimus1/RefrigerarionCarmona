@@ -2,15 +2,17 @@ import React, { useState } from 'react'
 import { redirect } from 'react-router-dom';
 
 function Contact() {
-  // References 
-  // https://plainenglish.io/blog/send-whatsapp-web-messages-in-react-easily-3bf2a82a2eb2
-
   const [category, setCategory] = React.useState("Reparación");
   
-  const messages = { 
-    "Reparación": "¿Qué tipo de equipo es y cuáles son sus principales fallos?", 
-    "Mantenimiento": "¿Qué tipo de equipo es el que necesita el Mantenimenito?", 
-    "Instalación": "¿Qué tipo de equipo necesita instalar?" 
+  // Set view to the top
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  const messages = {
+    "Reparación": "¿Qué tipo de equipo es y cuáles son sus principales fallos?",
+    "Mantenimiento": "¿Qué tipo de equipo es el que necesita el Mantenimenito?",
+    "Instalación": "¿Qué tipo de equipo necesita instalar?"
   }
 
   function handleSubmit(e) {

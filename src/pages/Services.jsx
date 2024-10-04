@@ -2,12 +2,16 @@ import React from 'react';
 import ServicesPageComponent from '../components/ServicesPageComponent';
 
 function Services() {
-
+  
+  // Set view to the top
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   const text = "Nuestros servicios"
-  console.log(text.length)
+
   return (
     <>
-
       {/* hero */}
       <section className="flex h-[95vh] items-center justify-center ">
         <div className='area'></div>

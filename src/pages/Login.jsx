@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function Login() {
+
+  // Set view to the top
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className='h-[95vh] flex justify-center items-center mb-20'>
       <form className=" w-3/4 lg:w-1/2 mx-auto lg:border lg:border-gray-100 lg:p-3 lg:rounded-lg lg:shadow-lg" onSubmit={(event) => handleSubmit(event)}>
