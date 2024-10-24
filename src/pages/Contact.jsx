@@ -3,6 +3,12 @@ import { redirect } from 'react-router-dom';
 
 function Contact() {
   const [category, setCategory] = React.useState("Reparación");
+  const [name, setName] = React.useState("");
+  const [lastName, setLastName] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [aditionalData, setAditionalData] = React.useState("");
+
+  
   
   // Set view to the top
   React.useEffect(() => {
@@ -20,9 +26,11 @@ function Contact() {
 
     let url = `https://web.whatsapp.com/send?phone=""&`;
 
-    let text = `Hola soy ${e.target[0].value} ${e.target[1].value}. Escribo ya que necesito un@ ${e.target[2].value}. ${e.target[4].value}`
+    let text = `Hola mi nombre es ${name} ${lastName}, me gustaria cotizar el precio de un@ ${category}. ${aditionalData}.`
 
-    globalThis.location.href = url + "text=" + `"${text}"`;
+    console.log(text)
+    window.location.href = `https://wa.me/${import.meta.env.VITE_PHONE}/?text=${text}`;  
+    
   }
 
   return (
@@ -38,17 +46,17 @@ function Contact() {
           <h3 className='text-center text-xl text-gray-400 select-none lg:text-2xl'>Déjanos saber quién eres</h3>
           <div className="grid md:grid-cols-2 md:gap-6">
             <div className="relative z-0 w-full mb-5 group">
-              <input type="text" name="floating_first_name" id="first_name" className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-950 peer" placeholder=" " required />
+              <input type="text" name="floating_first_name" id="first_name" onChange={(text)=> setName(text.target.value)} className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-950 peer" placeholder=" " required />
               <label htmlFor="first_name" className="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
-              <input type="text" name="floating_last_name" id="last_name" className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-950 peer" placeholder=" " required />
+              <input type="text" name="floating_last_name" id="last_name" onChange={(text)=> setLastName(text.target.value)} className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-950 peer" placeholder=" " required />
               <label htmlFor="last_name" className="peer-focus:font-medium absolute text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Apellido</label>
             </div>
           </div>
 
           <div className="relative z-0 w-full mb-5 group">
-            <input type="tel" pattern="[0-9]{11}" name="phone" id="phone" className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-950 peer" placeholder=" " required />
+            <input type="tel" pattern="[0-9]{11}" name="phone" id="phone" onChange={(text)=> setPhone(text.target.value)} className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-950 peer" placeholder=" " required />
             <label htmlFor="phone" className="peer-focus:font-medium absolute text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Numero Telefónico</label>
           </div>
 
@@ -67,7 +75,7 @@ function Contact() {
 
           <div className="relative z-0 w-full mb-5 group">
             <label htmlFor="message" className="text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10  peer-focus:text-blue-600 ">{messages[category]}</label>
-            <textarea id="message" rows="4" className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-950 peer"></textarea>
+            <textarea id="message" rows="4" required onChange={(text)=> setAditionalData(text.target.value)} className="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-950 peer"></textarea>
           </div>
         </div>
 
