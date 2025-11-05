@@ -12,14 +12,14 @@ function Services() {
     },
     {
       id: 2,
-      img: 'https://media.licdn.com/dms/image/v2/D4D12AQHn3ZlKxKzGbg/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1697791815087?e=2147483647&v=beta&t=hbWWhWl5KnxbuHCBpe7axKNyYJLMka-po4Dub7JkCRE',
+      img: 'https://aircon.pe/wp-content/uploads/2021/06/mantenimiento-de-aire-acondicionado-en-lima-aircon-peru-ld-1600x800.jpg',
       title: 'Reparación',
       coverage: ["Neveras","Congeladores","Enfriadores","Aires Acondicionados", "Cava Cuarto", "Maquinas de hielo", "Maquinas de Helado"],
       url: "/services"
     },
     {
       id: 3,
-      img: 'https://aircon.pe/wp-content/uploads/2021/06/mantenimiento-de-aire-acondicionado-en-lima-aircon-peru-ld-1600x800.jpg',
+      img: 'https://www.tensifrio.com/images/custom/service-2.jpeg',
       title: 'Mantenimiento',
       coverage: ["Aires Acondicionados","Neveras","Congeladores","Enfriadores", "Cava Cuarto"],
       url: "/services"

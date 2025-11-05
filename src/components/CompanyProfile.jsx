@@ -7,7 +7,7 @@ function CompanyProfile() {
     return (
         <section className='px-14 flex flex-col justify-center items-center mb-40
         md:flex-row md:gap-x-20 h-auto'>
-            <img alt={''} src={'https://placehold.co/350x500'} />
+            <img alt={'logo'} src={'/public/RC.jpg'} />
             <div className='md:flex md:flex-col md:justify-start min-h-[500px] '>
                 <h2 className='text-center text-background text-3xl font-bold my-10'>Refrigeracion Carmona</h2>
                 <p className='text-pretty text-xl md:max-w-[40rem] md:text-wrap'>

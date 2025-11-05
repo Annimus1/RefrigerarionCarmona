@@ -63,7 +63,7 @@ const instalacion = {
 
     {
       title: "Sistemas de protección electrica",
-      src: "https://blog.suileraltamirano.com/wp-content/uploads/2023/04/juhujh-1024x811.png"
+      src: "https://aguasclarasengenharia.com.br/wp-content/uploads/2024/05/519cdfc5-92ab-4eb6-86b2-35560753f863-e1687977966353-768x904-1.png"
     },
     {
       title: "Aires Acondicionados",
@@ -88,7 +88,7 @@ const mantenimiento = {
   id: "mantenimiento",
   reverse: true,
   title: "Mantenimiento",
-  img: "https://aircon.pe/wp-content/uploads/2021/06/mantenimiento-de-aire-acondicionado-en-lima-aircon-peru-ld-1600x800.jpg",
+  img: "https://www.tensifrio.com/images/custom/service-2.jpeg",
   services: [
     {
       title: "Neveras",
@@ -125,7 +125,7 @@ const reparacion = {
   id: "reparacion",
   reverse: false,
   title: "Reparación",
-  img: "https://media.licdn.com/dms/image/v2/D4D12AQHn3ZlKxKzGbg/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1697791815087?e=2147483647&v=beta&t=hbWWhWl5KnxbuHCBpe7axKNyYJLMka-po4Dub7JkCRE",
+  img: "https://aircon.pe/wp-content/uploads/2021/06/mantenimiento-de-aire-acondicionado-en-lima-aircon-peru-ld-1600x800.jpg",
   services: [
     {
       title: "Neveras",
